@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<title> RWD </title>
+<meta charset="utf-8">
+<!-- 1. add Viewport -->
+<!-- 창 크기에 맞춰 내용물 크기가 달라짐 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* 2. box-sizing */
+* {box-sizing: border-box;}
+/* 3. define the row */
+.header {
+    border: 1px solid red;
+    padding: 15px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+/* 4. 12column grid view */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+</style>
+</head>
+<body>
+<div class="row">
+   <div class="col-12" style="background-color:lightpink">
+      <h1> Heading </h1>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-3" style="background-color:lightgreen">
+      <p> CSS </p>
+   </div>
+   <div class="col-9" style="background-color:lightblue">
+      <p> Hi-hello </p>
+   </div>
+</div>
+<div class="col-3" style="background-color:lightblue">
+<p> bye</p>
+</div>
+<div class="col-3" style="background-color:lightblue">
+<p> wow</p>
+
+</div>
+<div class="col-12" style="background-color:lightblue">
+<p> zzz</p>
+</div>
+<div class="col-1" style="background-color:lightblue">
+<p> wow</p>
+
+</div>
+<div class="col-1" style="background-color:lightblue">
+<p> wow</p>
+
+</div>
+<div class="col-1" style="background-color:lightblue">
+<p> wow</p>
+
+</div>
+<div class="col-1" style="background-color:lightblue">
+<p> wow</p>
+
+</div>
+<div class="col-1" style="background-color:lightblue">
+<p> wow</p>
+
+</div>
+<div class="col-1" style="background-color:lightblue">
+<p> wow</p>
+
+</div>
+<div class="col-1" style="background-color:lightblue">
+<p> wow</p>`
+
+</div>
+<div class="col-1" style="background-color:lightblue">
+<p> wow</p>
+
+</div>
+<div class="col-1" style="background-color:lightblue">
+<p> wow</p>
+
+</div>
+<div class="col-1" style="background-color:lightblue">
+<p> wow</p>
+
+</div>
+
+<div class="col-1" style="background-color:lightblue">
+<p> wow</p>
+
+</div>
+
+<div class="col-1" style="background-color:lightblue">
+<p> wow</p>
+</div>
+</div>
+</body>
+
+</html>
